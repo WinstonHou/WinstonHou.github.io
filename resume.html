@@ -24,6 +24,25 @@
             scroll-behavior: smooth;
         }
 
+        /* Profile Image Styling */
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%; /* Makes it a clean circle */
+            object-fit: cover; /* Prevents stretching or distortion */
+            border: 2px solid var(--accent-crimson);
+            box-shadow: 0 0 20px var(--accent-glow);
+            margin-bottom: 2rem;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Micro-interaction on hover */
+        .profile-img:hover {
+            transform: scale(1.05);
+            border-color: #ffffff;
+            box-shadow: 0 0 35px var(--accent-crimson);
+        }
+
         /* SPA Section Snap-Scrolling Engine */
         html, body {
             background-color: var(--bg-main);
@@ -294,6 +313,7 @@
 
     <section id="hero">
         <div class="page-content">
+            <img src="profile.jpeg" alt="Winston Hou" class="profile-img">
             <h1>Winston Hou</h1>
             <p>Quantitative Analysis &bull; Policy Research &bull; Entrepreneurship</p>
             <div class="hero-nav">
